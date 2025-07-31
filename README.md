@@ -1,12 +1,118 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 💰 Expense Tracker
 
-Currently, two official plugins are available:
+A modern and responsive **Expense Tracker** app built with **React**, **Vite**, and **Redux Toolkit**. This app helps you manage your income and expenses, with filtering, chart visualizations, and data summaries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [Click here to view the live site](https://annpurna04.github.io/Expense-Tracker/)
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React 19
+- ⚡ Vite
+- 🗃 Redux Toolkit
+- 📊 Chart.js & Recharts
+- 📅 React Date Picker
+- 🎨 CSS (no Tailwind)
+- 📦 GitHub Pages (deployment)
+
+---
+
+## 📁 Project Structure
+
+```
+Expense-Tracker/
+├── public/
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── redux/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── .gitignore
+├── vite.config.js
+├── package.json
+└── README.md
+```
+
+---
+
+## 🧪 Getting Started
+
+### 📦 Install dependencies
+
+```bash
+npm install
+```
+
+### 🧑‍💻 Run locally
+
+```bash
+npm run dev
+```
+
+---
+
+## 🛠 Deployment (GitHub Pages)
+
+### 1. Add to `package.json`:
+
+```json
+"homepage": "https://annpurna04.github.io/Expense-Tracker",
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+### 2. Update `vite.config.js`:
+
+```js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  base: '/Expense-Tracker/',
+  plugins: [react()],
+})
+```
+
+### 3. Deploy:
+
+```bash
+npm run deploy
+```
+
+---
+
+## 💡 Features
+
+- ✅ Add, edit, and delete expenses
+- 🔍 Search by name or amount
+- 📅 Filter by date range
+- 📊 Pie and Bar chart visualizations
+- 💸 Income vs Expense summary
+- 📱 Mobile responsive UI
+
+---
+
+## 📜 License
+
+Licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙋‍♀️ Author
+
+**Annpurna Gupta**  
+🌐 [GitHub Profile](https://github.com/annpurna04)
